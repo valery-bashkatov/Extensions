@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CALayer Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Extension/CALayer" class="dashAnchor"></a>
+
+    <a title="CALayer Extension Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Extensions Docs
+        </a>
+         (100% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/valery-bashkatov/Extensions">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Extensions Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      CALayer Extension Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSCalendar.html">NSCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>CALayer</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CALayer</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCoding</span><span class="p">,</span> <span class="kt">CAMediaTiming</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>CALayer</code> extension for animations control.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Managing%20Animations"></a>
+                <a name="//apple_ref/swift/Section/Managing Animations" class="dashAnchor"></a>
+                <a href="#/Managing%20Animations">
+                  <h3 class="section-name">Managing Animations</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo7CALayer12addAnimationFTCSo11CAAnimation6forKeyGSqSS_9withDelayV12CoreGraphics7CGFloat_T_"></a>
+                    <a name="//apple_ref/swift/Method/addAnimation(_:forKey:withDelay:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer12addAnimationFTCSo11CAAnimation6forKeyGSqSS_9withDelayV12CoreGraphics7CGFloat_T_">addAnimation(_:forKey:withDelay:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds animation with delay time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAnimation</span><span class="p">(</span><span class="nv">animation</span><span class="p">:</span> <span class="kt">CAAnimation</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withDelay</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The animation to be added.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string that identifies the animation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delay</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delay start animation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo7CALayer18pauseAllAnimationsFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/pauseAllAnimations()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer18pauseAllAnimationsFT_T_">pauseAllAnimations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pauses all animations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseAllAnimations</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo7CALayer19resumeAllAnimationsFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/resumeAllAnimations()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer19resumeAllAnimationsFT_T_">resumeAllAnimations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resumes all animations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeAllAnimations</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2016-08-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

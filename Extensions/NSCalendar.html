@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NSCalendar Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Extension/NSCalendar" class="dashAnchor"></a>
+
+    <a title="NSCalendar Extension Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Extensions Docs
+        </a>
+         (100% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/valery-bashkatov/Extensions">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Extensions Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      NSCalendar Extension Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSCalendar.html">NSCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>NSCalendar</h1>
+            <p>Undocumented</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting%20First%20and%20Last%20Day"></a>
+                <a name="//apple_ref/swift/Section/Getting First and Last Day" class="dashAnchor"></a>
+                <a href="#/Getting%20First%20and%20Last%20Day">
+                  <h3 class="section-name">Getting First and Last Day</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo10NSCalendar8firstDayFT2ofVSC14NSCalendarUnit3forCSo6NSDate_S2_"></a>
+                    <a name="//apple_ref/swift/Method/firstDay(of:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo10NSCalendar8firstDayFT2ofVSC14NSCalendarUnit3forCSo6NSDate_S2_">firstDay(of:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the first day of a given calendar unit (year, quarter, month or week) that contains a given date.
+For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">NSCalendarUnit</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSDate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calendar unit to use for the first day calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date for which to perform the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The first day of the calendar unit of the given date.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo10NSCalendar7lastDayFT2ofVSC14NSCalendarUnit3forCSo6NSDate_S2_"></a>
+                    <a name="//apple_ref/swift/Method/lastDay(of:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo10NSCalendar7lastDayFT2ofVSC14NSCalendarUnit3forCSo6NSDate_S2_">lastDay(of:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last day of a given calendar unit (year, quarter, month or week) that contains a given date.
+For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">NSCalendarUnit</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSDate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calendar unit to use for the last day calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date for which to perform the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The last day of the calendar unit of the given date.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting%20Date%20Range"></a>
+                <a name="//apple_ref/swift/Section/Getting Date Range" class="dashAnchor"></a>
+                <a href="#/Getting%20Date%20Range">
+                  <h3 class="section-name">Getting Date Range</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE10ExtensionsCSo10NSCalendar12datesBetweenFTCSo6NSDate3andS1_8withStepVSC14NSCalendarUnit5valueSi_GSaS1__"></a>
+                    <a name="//apple_ref/swift/Method/datesBetween(_:and:withStep:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE10ExtensionsCSo10NSCalendar12datesBetweenFTCSo6NSDate3andS1_8withStepVSC14NSCalendarUnit5valueSi_GSaS1__">datesBetween(_:and:withStep:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of dates in the interval with the specified step value. 
+For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15, 2016, June 16, 2016 and June 17, 2016.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">datesBetween</span><span class="p">(</span><span class="nv">startDate</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">,</span> <span class="n">and</span> <span class="nv">finishDate</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">,</span> <span class="n">withStep</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">NSCalendarUnit</span> <span class="o">=</span> <span class="o">.</span><span class="kt">Day</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">NSDate</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The start date of the interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>finishDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The finish date of the interval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The step unit for the interval. The default value is day.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value for the given step unit. The default value is 1.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of dates.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2016-08-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
