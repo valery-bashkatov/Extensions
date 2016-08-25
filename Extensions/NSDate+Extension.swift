@@ -28,13 +28,13 @@ public extension NSDate {
      - parameter string: A string representation of date.
      - parameter format: The date format in the string.
      
-     - returns: An `NSDate` object.
+     - returns: An `NSDate` object or nil if can not parse the string.
      */
-    public static func create(fromString string: String, format: String) -> NSDate {
+    public static func create(fromString string: String, format: String) -> NSDate? {
         let formatter = NSDateFormatter()
         
         formatter.dateFormat = format
-        return formatter.dateFromString(string)!
+        return formatter.dateFromString(string)
     }
     
     /**
