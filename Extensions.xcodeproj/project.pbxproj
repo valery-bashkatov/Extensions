@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832F1CA51D6EFDDB00AF1693 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F1CA41D6EFDDB00AF1693 /* NSDate+Extension.swift */; };
 		83B4D0F21D5B2D05004BAF86 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B4D0E71D5B2D04004BAF86 /* Extensions.framework */; };
 		83B4D1051D5B2D38004BAF86 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4D1011D5B2D38004BAF86 /* UIDevice+Extension.swift */; };
 		83B4D1061D5B2D38004BAF86 /* NSCalendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4D1021D5B2D38004BAF86 /* NSCalendar+Extension.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		832F1CA41D6EFDDB00AF1693 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		83B4D0E71D5B2D04004BAF86 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B4D0EC1D5B2D04004BAF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83B4D0F11D5B2D05004BAF86 /* ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 				83B4D1041D5B2D38004BAF86 /* CALayer+Extension.swift */,
 				83B4D1031D5B2D38004BAF86 /* Double+Extension.swift */,
 				83B4D1021D5B2D38004BAF86 /* NSCalendar+Extension.swift */,
+				832F1CA41D6EFDDB00AF1693 /* NSDate+Extension.swift */,
 				83B4D1011D5B2D38004BAF86 /* UIDevice+Extension.swift */,
 			);
 			path = Extensions;
@@ -209,6 +212,7 @@
 				83B4D1051D5B2D38004BAF86 /* UIDevice+Extension.swift in Sources */,
 				83B4D1071D5B2D38004BAF86 /* Double+Extension.swift in Sources */,
 				83B4D1081D5B2D38004BAF86 /* CALayer+Extension.swift in Sources */,
+				832F1CA51D6EFDDB00AF1693 /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

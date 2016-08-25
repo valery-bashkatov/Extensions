@@ -23,7 +23,7 @@ public extension Double {
      0.00003 -> 0.00003 (not 3e-05)
      ```
      */
-    var string: String {
+    public var string: String {
         let stringValue: String
         
         if trunc(self) == self {
@@ -46,7 +46,7 @@ public extension Double {
      
      - returns: Truncated number.
      */
-    func truncate(toDecimalPlaces decimalPlaces: Int) -> Double {
+    public func truncate(toDecimalPlaces decimalPlaces: Int) -> Double {
         return trunc(self * pow(10, Double(decimalPlaces))) / pow(10, Double(decimalPlaces))
     }
 }
