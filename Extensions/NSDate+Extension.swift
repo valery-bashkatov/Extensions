@@ -43,14 +43,14 @@ public extension NSDate {
      Example:
      
      ```
-     NSDate().string(withFormat: "HH:mm:ss")
+     NSDate().string(format: "HH:mm:ss")
      ```
      
      - parameter format: The format in which to present the date.
      
      - returns: A string representation of the date.
      */
-    public func string(withFormat format: String) -> String {
+    public func string(format format: String) -> String {
         let formatter = NSDateFormatter()
         
         formatter.dateFormat = format
