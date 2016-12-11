@@ -11,7 +11,7 @@ import Foundation
 /**
  The `NSDate` extension for dates formatting.
  */
-public extension NSDate {
+public extension Date {
     
     // MARK: - Date Formatting
     
@@ -30,11 +30,11 @@ public extension NSDate {
      
      - returns: An `NSDate` object or nil if can not parse the string.
      */
-    public static func create(fromString string: String, format: String) -> NSDate? {
-        let formatter = NSDateFormatter()
+    public static func create(fromString string: String, format: String) -> Date? {
+        let formatter = DateFormatter()
         
         formatter.dateFormat = format
-        return formatter.dateFromString(string)
+        return formatter.date(from: string)
     }
     
     /**
@@ -50,10 +50,10 @@ public extension NSDate {
      
      - returns: A string representation of the date.
      */
-    public func string(format format: String) -> String {
-        let formatter = NSDateFormatter()
+    public func string(format: String) -> String {
+        let formatter = DateFormatter()
         
         formatter.dateFormat = format
-        return formatter.stringFromDate(self)
+        return formatter.string(from: self)
     }
 }

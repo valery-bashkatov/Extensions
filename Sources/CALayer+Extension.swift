@@ -22,19 +22,19 @@ public extension CALayer {
      - parameter key: A string that identifies the animation.
      - parameter delay: The delay start animation.
      */
-    public func addAnimation(animation: CAAnimation, forKey key: String?, withDelay delay: CGFloat) {
-        animation.beginTime = convertTime(CACurrentMediaTime(), fromLayer: nil) + Double(delay)
+    public func addAnimation(_ animation: CAAnimation, forKey key: String?, withDelay delay: CGFloat) {
+        animation.beginTime = convertTime(CACurrentMediaTime(), from: nil) + Double(delay)
         
         if animation.fillMode == kCAFillModeRemoved {
             animation.fillMode = kCAFillModeBackwards
         }
         
-        addAnimation(animation, forKey: key)
+        add(animation, forKey: key)
     }
     
     /// Pauses all animations.
     public func pauseAllAnimations() {
-        let pausedTime = convertTime(CACurrentMediaTime(), fromLayer: nil)
+        let pausedTime = convertTime(CACurrentMediaTime(), from: nil)
         
         speed = 0
         timeOffset = pausedTime
@@ -47,6 +47,6 @@ public extension CALayer {
         speed = 1
         timeOffset = 0
         beginTime = 0
-        beginTime = convertTime(CACurrentMediaTime(), toLayer: nil) - pausedTime
+        beginTime = convertTime(CACurrentMediaTime(), to: nil) - pausedTime
     }
 }

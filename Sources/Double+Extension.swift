@@ -29,7 +29,7 @@ public extension Double {
         if trunc(self) == self {
             stringValue = "\(Int(self))"
         } else if abs(self) < 0.0001 {
-            stringValue = "\(self + (self.isSignMinus ? -1 : 1))".stringByReplacingOccurrencesOfString("1.", withString: "0.")
+            stringValue = "\(self + ((self.sign == .minus) ? -1 : 1))".replacingOccurrences(of: "1.", with: "0.")
         } else {
             stringValue = "\(self)"
         }

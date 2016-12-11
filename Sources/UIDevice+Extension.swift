@@ -27,8 +27,8 @@ public extension UIDevice {
         var identifier = ""
         
         for child in mirror.children {
-            if let value = child.value as? Int8 where value != 0 {
-                identifier.append(UnicodeScalar(UInt8(value)))
+            if let value = child.value as? Int8, value != 0 {
+                identifier.append(String(UnicodeScalar(UInt8(value))))
             }
         }
         
@@ -55,6 +55,8 @@ public extension UIDevice {
         case "iPhone8,2": model = "iPhone 6s Plus"
         case "iPhone8,1": model = "iPhone 6s"
         case "iPhone8,4": model = "iPhone SE"
+        case "iPhone9,1", "iPhone9,3": model = "iPhone 7"
+        case "iPhone9,2", "iPhone9,4": model = "iPhone 7 Plus"
             
         case "iPad2,5", "iPad2,6", "iPad2,7": model = "iPad Mini"
         case "iPad4,4", "iPad4,5", "iPad4,6": model = "iPad Mini 2"
@@ -67,7 +69,7 @@ public extension UIDevice {
         case "iPad3,4", "iPad3,5", "iPad3,6": model = "iPad 4"
         case "iPad4,1", "iPad4,2", "iPad4,3": model = "iPad Air"
         case "iPad5,3", "iPad5,4": model = "iPad Air 2"
-        
+            
         case "iPad6,3", "iPad6,4", "iPad6,7", "iPad6,8": model = "iPad Pro"
         
         default: model = identifier
