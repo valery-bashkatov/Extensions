@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
 
@@ -21,6 +24,12 @@
           Extensions Docs
         </a>
          (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
       </p>
     
         <p class="header-col header-col--secondary">
@@ -70,11 +79,12 @@
             <h1>CALayer</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CALayer</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCoding</span><span class="p">,</span> <span class="kt">CAMediaTiming</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CALayer</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span><span class="p">,</span> <span class="kt">CAMediaTiming</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>The <code>CALayer</code> extension for animations control.</p>
+
           </div>
         </section>
 
@@ -92,9 +102,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsCSo7CALayer12addAnimationFTCSo11CAAnimation6forKeyGSqSS_9withDelayV12CoreGraphics7CGFloat_T_"></a>
+                    <a name="/c:@CM@Extensions@@objc(cs)CALayer(im)addAnimation:forKey:withDelay:"></a>
                     <a name="//apple_ref/swift/Method/addAnimation(_:forKey:withDelay:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer12addAnimationFTCSo11CAAnimation6forKeyGSqSS_9withDelayV12CoreGraphics7CGFloat_T_">addAnimation(_:forKey:withDelay:)</a>
+                    <a class="token" href="#/c:@CM@Extensions@@objc(cs)CALayer(im)addAnimation:forKey:withDelay:">addAnimation(_:forKey:withDelay:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -109,7 +119,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAnimation</span><span class="p">(</span><span class="n">_</span> <span class="nv">animation</span><span class="p">:</span> <span class="kt">CAAnimation</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withDelay</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAnimation</span><span class="p">(</span><span class="n">_</span> <span class="nv">animation</span><span class="p">:</span> <span class="kt">CAAnimation</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withDelay</span> <span class="nv">delay</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -126,7 +136,6 @@
                               <td>
                                 <div>
                                   <p>The animation to be added.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -139,7 +148,6 @@
                               <td>
                                 <div>
                                   <p>A string that identifies the animation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -152,7 +160,6 @@
                               <td>
                                 <div>
                                   <p>The delay start animation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -165,9 +172,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsCSo7CALayer18pauseAllAnimationsFT_T_"></a>
+                    <a name="/c:@CM@Extensions@@objc(cs)CALayer(im)pauseAllAnimations"></a>
                     <a name="//apple_ref/swift/Method/pauseAllAnimations()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer18pauseAllAnimationsFT_T_">pauseAllAnimations()</a>
+                    <a class="token" href="#/c:@CM@Extensions@@objc(cs)CALayer(im)pauseAllAnimations">pauseAllAnimations()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -182,7 +189,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseAllAnimations</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseAllAnimations</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -192,9 +199,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsCSo7CALayer19resumeAllAnimationsFT_T_"></a>
+                    <a name="/c:@CM@Extensions@@objc(cs)CALayer(im)resumeAllAnimations"></a>
                     <a name="//apple_ref/swift/Method/resumeAllAnimations()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsCSo7CALayer19resumeAllAnimationsFT_T_">resumeAllAnimations()</a>
+                    <a class="token" href="#/c:@CM@Extensions@@objc(cs)CALayer(im)resumeAllAnimations">resumeAllAnimations()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -209,7 +216,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeAllAnimations</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeAllAnimations</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -224,8 +231,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2016-12-11)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

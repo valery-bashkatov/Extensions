@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
 
@@ -21,6 +24,12 @@
           Extensions Docs
         </a>
          (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
       </p>
     
         <p class="header-col header-col--secondary">
@@ -70,11 +79,12 @@
             <h1>Calendar</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Calendar</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">ReferenceConvertible</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Calendar</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="n">_MutableBoxing</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>The <code>NSCalendar</code> extension for getting the first/last day.</p>
+
           </div>
         </section>
 
@@ -92,9 +102,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsV10Foundation8Calendar8firstDayFT2ofOS1_9Component3forVS0_4Date_S3_"></a>
+                    <a name="/s:10Foundation8CalendarV10ExtensionsE8firstDayAA4DateVAC9ComponentO2of_AG3fortF"></a>
                     <a name="//apple_ref/swift/Method/firstDay(of:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsV10Foundation8Calendar8firstDayFT2ofOS1_9Component3forVS0_4Date_S3_">firstDay(of:for:)</a>
+                    <a class="token" href="#/s:10Foundation8CalendarV10ExtensionsE8firstDayAA4DateVAC9ComponentO2of_AG3fortF">firstDay(of:for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -110,7 +120,7 @@ For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
@@ -127,7 +137,6 @@ For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
                               <td>
                                 <div>
                                   <p>The calendar unit to use for the first day calculation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -140,7 +149,6 @@ For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
                               <td>
                                 <div>
                                   <p>The date for which to perform the calculation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -150,7 +158,6 @@ For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The first day of the calendar unit of the given date.</p>
-
                       </div>
                     </section>
                   </div>
@@ -158,9 +165,9 @@ For example, first day of the month for June 15, 2016 will be June 1, 2016.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsV10Foundation8Calendar7lastDayFT2ofOS1_9Component3forVS0_4Date_S3_"></a>
+                    <a name="/s:10Foundation8CalendarV10ExtensionsE7lastDayAA4DateVAC9ComponentO2of_AG3fortF"></a>
                     <a name="//apple_ref/swift/Method/lastDay(of:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsV10Foundation8Calendar7lastDayFT2ofOS1_9Component3forVS0_4Date_S3_">lastDay(of:for:)</a>
+                    <a class="token" href="#/s:10Foundation8CalendarV10ExtensionsE7lastDayAA4DateVAC9ComponentO2of_AG3fortF">lastDay(of:for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -176,7 +183,7 @@ For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastDay</span><span class="p">(</span><span class="n">of</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="p">,</span> <span class="k">for</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
@@ -193,7 +200,6 @@ For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
                               <td>
                                 <div>
                                   <p>The calendar unit to use for the last day calculation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -206,7 +212,6 @@ For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
                               <td>
                                 <div>
                                   <p>The date for which to perform the calculation.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -216,7 +221,6 @@ For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The last day of the calendar unit of the given date.</p>
-
                       </div>
                     </section>
                   </div>
@@ -235,9 +239,9 @@ For example, last day of the week for June 15, 2016 will be June 19, 2016.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE10ExtensionsV10Foundation8Calendar12datesBetweenFTVS0_4Date3andS2_8withStepOS1_9Component5valueSi_GSaS2__"></a>
+                    <a name="/s:10Foundation8CalendarV10ExtensionsE12datesBetweenSayAA4DateVGAG_AG3andAC9ComponentO8withStepSi5valuetF"></a>
                     <a name="//apple_ref/swift/Method/datesBetween(_:and:withStep:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE10ExtensionsV10Foundation8Calendar12datesBetweenFTVS0_4Date3andS2_8withStepOS1_9Component5valueSi_GSaS2__">datesBetween(_:and:withStep:value:)</a>
+                    <a class="token" href="#/s:10Foundation8CalendarV10ExtensionsE12datesBetweenSayAA4DateVGAG_AG3andAC9ComponentO8withStepSi5valuetF">datesBetween(_:and:withStep:value:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -253,7 +257,7 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">datesBetween</span><span class="p">(</span><span class="n">_</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">and</span> <span class="nv">finishDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">withStep</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span> <span class="o">=</span> <span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Date</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">datesBetween</span><span class="p">(</span><span class="n">_</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">and</span> <span class="nv">finishDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">withStep</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span> <span class="o">=</span> <span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Date</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -270,7 +274,6 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                               <td>
                                 <div>
                                   <p>The start date of the interval.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -283,7 +286,6 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                               <td>
                                 <div>
                                   <p>The finish date of the interval.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -296,7 +298,6 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                               <td>
                                 <div>
                                   <p>The step unit for the interval. The default value is day.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -309,7 +310,6 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                               <td>
                                 <div>
                                   <p>The value for the given step unit. The default value is 1.</p>
-
                                 </div>
                               </td>
                             </tr>
@@ -319,7 +319,6 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
                       <div>
                         <h4>Return Value</h4>
                         <p>An array of dates.</p>
-
                       </div>
                     </section>
                   </div>
@@ -332,8 +331,8 @@ For example, from June 15, 2016 to June 17, 2016 with step 1 day will be June 15
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2016-12-11)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
